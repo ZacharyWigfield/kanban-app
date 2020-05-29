@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "kanban-app": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "kanban-app"
+    }
+  },
+  "defaultProject": "kanban-app",
+  "cli": {
+    "analytics": "68edf129-4c01-43e1-9999-19c1217bb387"
+  }
 }
