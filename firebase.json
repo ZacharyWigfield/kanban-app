@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "kanban-app",
+      "public": "dist/kanban-app",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

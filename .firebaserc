@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "kanban-app-28c24": {
+      "hosting": {
+        "kanban-app": [
+          "kanban-app-28c24"
+        ]
+      }
+    }
+  }
+}
