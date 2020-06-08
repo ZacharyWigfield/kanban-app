@@ -10,6 +10,7 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 export class ShellComponent {
 
+  // this observable determines whether the user is using a mobile device or not. We use the result of this call to display proper html.
   isHandset$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.Handset])
   .pipe(
     map(result => result.matches),
