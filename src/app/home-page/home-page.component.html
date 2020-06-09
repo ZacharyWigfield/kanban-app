@@ -1,1 +1,9 @@
-<h1>This is the Home Page</h1>
+<div *ngIf="!(afAuth.authState | async)">
+    <h1>Please login!</h1>
+</div>
+
+<div *ngIf="afAuth.authState | async as user">
+    <p>
+        Welcome <strong>{{ user.email }}</strong>
+    </p>
+</div>
