@@ -4,7 +4,13 @@ import { HomePageComponent } from './home-page/home-page.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent }
+  { path: '', component: HomePageComponent },
+  // this path is lazy loaded. Recommended for any feature module loaded by router that isn't in the critical path during page load.
+  // It basically imports the user module only when the path is routed to.
+  // Remember that the default path in our user-routing module is the login page. 
+  {
+    path: 'login', loadChildren: () => import('./user/user.module').then(m => m.UserModule)
+  }
 ];
 
 @NgModule({
