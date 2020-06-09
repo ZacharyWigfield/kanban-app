@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
+// Feature modules and components
 import { HomePageComponent } from './home-page/home-page.component';
 
 

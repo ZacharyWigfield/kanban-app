@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
+// Feature modules and components
 import { LoginPageComponent } from './login-page/login-page.component';
 
 
