@@ -17,8 +17,11 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 // kanban modules and components
 import { ShellComponent } from './shell/shell.component';
+import { DeleteButtonComponent } from './delete-button/delete-button.component';
 
-const components = [ShellComponent];
+const components = [
+  ShellComponent,
+  DeleteButtonComponent];
 const modules = [
   CommonModule,
   MatButtonModule,
